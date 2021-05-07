@@ -2,11 +2,13 @@
 
 library("broom")
 
-# Import data
+# Import dragon data
 source("R/import_dragon_data.R")
 
 
-# Run model
+# Run dragon model
 
 mod <- lm(body_size ~ body_length * temperature, data = dragon)
+
+# tidy model output
 tidy(mod)
