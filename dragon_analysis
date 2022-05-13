@@ -12,3 +12,5 @@ mod <- lm(body_size ~ body_length * temperature, data = dragon)
 
 # tidy model output
 tidy(mod)
+
+# make new analysis
